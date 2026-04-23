@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --soft-pink: #ffafcc;
+            --hot-pink: #ff8fab;
+            --light-pink: #fdf0f3;
+            --cream: #fffbff;
+            --text-dark: #4a3035;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light-pink);
+            background-image: radial-gradient(#ffafcc 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 3px dashed var(--soft-pink);
+        }
+
+        header h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            color: var(--hot-pink);
+            font-style: italic;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 175, 204, 0.3);
+        }
+
+        nav a {
+            color: var(--text-dark);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 16px;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--soft-pink);
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 40px;
+            border: 1px solid white;
+            box-shadow: 0 20px 40px rgba(255, 175, 204, 0.15);
+        }
+
+        .container h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 3rem;
+            color: var(--hot-pink);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+            opacity: 0.8;
+        }
+
+        /* GRID PROJECT (MODERN BENTO STYLE) */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 175, 204, 0.2);
+            box-shadow: 0 10px 20px rgba(255, 175, 204, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(255, 175, 204, 0.3);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--light-pink);
+        }
+
+        .project-card a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--hot-pink);
+            transition: 0.3s;
+        }
+
+        .project-card p.project-desc {
+            padding: 0 20px 20px;
+            font-size: 0.85rem;
+            font-style: normal;
+            margin-top: -10px;
+        }
+
+        .project-card a:hover {
+            background-color: var(--soft-pink);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: var(--soft-pink);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.5rem; }
+            .container { padding: 25px; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>The Projects.</h1>
+    <p>🎀 Kumpulan karya terbaik aku 🎀</p>
+</header>
+
+<nav>
+    <a href="index (1).html">Beranda</a>
+    <a href="profil (1).html">Profil</a>
+    <a href="video (1).html">Video</a>
+    <a href="project (1).html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <h2>My Creative Hub</h2>
+    <p>
+        Klik card di bawah buat intip project-project yang udah aku bikin selama ini ya! ✨
+    </p>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="https://i.pinimg.com/736x/20/3e/df/203edffaac7c5969d0106460bb50cea6.jpg" alt="Video">
+            <a href="video.html">Video Argumentasi</a>
+            <p class="project-desc"></p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://i.pinimg.com/736x/8f/89/0c/8f890c0a94a9e0b2cb93196e7334a5da.jpg" alt="Website">
+            <a href="index.html">Website Portofolio</a>
+            <p class="project-desc"></p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://i.pinimg.com/1200x/66/79/61/667961103e7365cd58cf0ecfd66f747e.jpg" alt="Game">
+            <a href="https://scratch.mit.edu/projects/1265210671/fullscreen/" target="_blank">Game Edukasi</a>
+            <p class="project-desc"></p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://i.pinimg.com/736x/49/de/c7/49dec7ca916612ca2de3b19f8cd5f109.jpg" alt="Other">
+            <a href="#">Next Big Project</a>
+            <p class="project-desc"></p>
+        </div>
+
+    </div>
